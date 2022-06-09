@@ -1,0 +1,24 @@
+Step 1:- Install PyCharm IDE.
+	Use link: https://www.jetbrains.com/pycharm/download/
+Step 2:- Extract Project zip file.
+Step 3:- Right Click on main.py file and open it with PyCharm IDE.
+Step 4:- Install library which is in main.py.
+Step 5:- Install Tesserect engine and set path in main.py.
+	Use link: https://digi.bib.uni-mannheim.de/tesseract/
+		  https://codeload.github.com/tesseract-ocr/tessdata/zip/refs/tags/4.0.0
+	eg. " pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe' "
+Step 6:- Create mySQL database named "form_data" and inside that create table "form_entry".
+
+			Name		Datatype	Field Length	Constraint
+		1	ID		Int(11)		11		Primary Key
+		2	Name		Varchar(100)	100		Not null
+		3	ID_No		Varchar(10)	10		Not null
+		4	Mobile		Double				Not null
+		5	Branch		Varchar(225)	225		Not null
+		6	Admission Year	Varchar(11)	11		Not null
+		7	Email		Varchar(100)	100		Not null
+		8	AddressLine1	Varchar(200)	200		Not null
+		9	AddressLine2	Varchar(200)	200		Not null
+		10	Declaration	Int(1)		1		Not null
+		11	Entdate		Date				Not null
+
